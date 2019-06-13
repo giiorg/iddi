@@ -1,0 +1,5 @@
+export const SET_LOADING = 'set_loading'
+export const BOOKS_LOAD = 'books_load'
+export const BOOK_ADD = 'book_add'
+export const BOOK_UPDATE = 'book_update'
+export const BOOK_DELETE = 'book_delete'
