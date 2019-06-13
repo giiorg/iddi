@@ -9,7 +9,6 @@ const prepareTitle = title => {
   for (let i = 0; i < title.length; i++) {
     const charCode = title.charCodeAt(i)
 
-    // if (charCode === 32 && !isPreviousWhitespace && preparedTitle.length > 0) {
     if (charCode === 32) {
       isPreviousWhitespace = true
 
