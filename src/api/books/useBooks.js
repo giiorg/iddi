@@ -56,10 +56,9 @@ const useBooks = () => {
   }
 
   const isTitleUnique = (title, index) =>
-    state.books.findIndex(
-      (book, i) =>
-        index !== i && prepareTitle(book.title) === prepareTitle(title)
-    ) === -1
+    state.books.findIndex((book, i) => {
+      return index !== i && prepareTitle(book.title) === prepareTitle(title)
+    }) === -1
 
   return {
     books: state.books,

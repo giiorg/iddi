@@ -18,7 +18,7 @@ const prepareTitle = title => {
     if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123)) {
       const isStartOfWord = isPreviousWhitespace || preparedTitle.length === 0
 
-      if (isStartOfWord && isPreviousWhitespace) {
+      if (isPreviousWhitespace && preparedTitle.length > 0) {
         preparedTitle += ' '
       }
 
